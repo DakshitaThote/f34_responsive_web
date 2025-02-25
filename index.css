@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.d1{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: url("../images/img_lights.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 250px;
+
+    position: relative;
+}
+.anim-cont{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 6, 6, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+
+    animation-name: boxAnim ;
+    animation-duration: 3s;
+
+}
+
+/* Annimation */
+@keyframes boxAnim {
+
+    from{
+        top: -600px;
+
+    }
+    to{
+        top: 0;
+    }
+    
+    
+}
